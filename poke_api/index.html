@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Esta línea declara el tipo de documento y la versión de HTML, en este caso HTML5 -->
+<html lang="es"> <!-- Abre la etiqueta html y define el idioma del documento como español -->
+<head> <!-- Abre la sección head que contiene metadatos y enlaces a recursos externos -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento, UTF-8 soporta la mayoría de los caracteres y símbolos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Asegura la compatibilidad con versiones anteriores de Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles y establece el zoom inicial -->
+    <title>Pokédex</title> <!-- Define el título del documento que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Vincula la hoja de estilos CSS externa al documento -->
+</head>
+<body> <!-- Abre la etiqueta body que contiene el contenido visible de la página -->  
+    <main> <!-- Abre la etiqueta main que envuelve el contenido principal de la página -->
+       <div id="pokemon-container" class="pokemon-container"></div> <!-- Un contenedor para los Pokémon que se cargarán dinámicamente -->
+        <div id="loading" class="modal"> <!-- Un modal que se muestra mientras se cargan los datos -->
+            <!-- Modal content -->
+            <div class="modal-content"> <!-- El contenido del modal -->
+              <h3>Cargando más información</h3> <!-- Un encabezado que indica que se está cargando más información -->
+              <div class="loader"></div> <!-- Un elemento que muestra una animación de carga -->
+            </div>
+        </div>
+    </main>
+    <footer> <!-- Abre la etiqueta footer que contiene el pie de página -->
+        <button class="btn cargar-mas" id="cargar-mas">Cargar más Pokémon</button> <!-- Un botón para cargar más Pokémon -->
+    </footer>
+    <script src="js/script.js"></script> <!-- Vincula el archivo JavaScript externo al documento -->
+</body>
+</html> <!-- Cierra las etiquetas html y body -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- Esta declaración define que el documento es HTML5 -->
+<html lang="es"> <!-- El elemento raíz del documento HTML, con el atributo lang establecido en 'es' para español -->
+<head>
+<meta charset="UTF-8"> <!-- Define la codificación de caracteres para el documento como UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que el sitio sea responsive en dispositivos móviles -->
+<link rel="stylesheet" href="css/style.css"> <!-- Vincula una hoja de estilos CSS externa al documento -->
+<title>Rick and Morty Characters</title> <!-- El título del documento, que aparece en la pestaña del navegador -->
+</head>
+<body>
+    
+    <main>   
+        <div id="characters" class="ram-container"></div> <!-- Un contenedor para los personajes de Rick y Morty -->
+        <div id="loading" class="modal"> <!-- Un modal que se muestra mientras se cargan los datos -->
+            <div class="modal-content"> <!-- El contenido del modal -->
+            <h3>Cargando más información</h3> <!-- Un encabezado que indica que se está cargando más información -->
+            <div class="loader"></div> <!-- Un elemento que muestra una animación de carga -->
+            </div>
+        </div>
+    </main>
+
+    <footer> <!-- El pie de página del documento -->
+        <button class="btn cargar-mas" id="loadMore">Cargar más</button> <!-- Un botón para cargar más personajes -->
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Vincula el archivo JavaScript externo al documento -->
+</body>
+</html>
